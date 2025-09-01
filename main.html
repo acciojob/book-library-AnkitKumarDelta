@@ -4,10 +4,95 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+    background-color: lightgrey;
+    margin: 0;                /* remove default margin */
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* center book-library horizontally */
+}
+
+.book-library {
+    width: 500px;
+    background-color: lightgrey;
+    padding: 20px 0;          /* only vertical padding, no left-right */
+    box-sizing: border-box;   /* include padding inside width */
+	box-shadow:2px 2px 2px 6px gray;
+}
+
+.book {
+    padding: 20px;
+}
+
+.image {
+    width: 100%;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 5px 0;
+}
+
+.content h4,
+.content p,
+.content button {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.divider {
+    background-color: white;
+    width: 100%;
+    height: 15px;
+}
+
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="book-library">
+		<h1 style="text-align:center;">Book Library</h1>
+		<div class="divider"></div>
+		<div class="book">
+			<div class="image">
+				<img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg">
+			</div>
+			<div class="content">
+				<h4>SPY IN THE AMBER</h4>
+				<p style="color:#777777">By Manohar Malgonkar</p>
+				<button style="background-color:#25D366; border:none;color:white;height:25px;">Rs. 299</button>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="book">
+			<div class="image">
+				<img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg">
+			</div>
+			<div class="content">
+				<h4>Sacred Games</h4>
+				<p style="color:#777777">By Vikram Chandra</p>
+				<button style="background-color:#25D366; border:none;color:white;height:25px;">Rs. 199</button>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="book">
+			<div class="image">
+				<img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg">
+			</div>
+			<div class="content">
+				<h4>BYOMKESH BAKSHI</h4>
+				<p style="color:#777777">By Saradindu Bandopadhyay</p>
+				<button style="background-color:#25D366; border:none;color:white;height:25px;">Rs. 249</button>
+			</div>
+		</div>
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
