@@ -1,77 +1,82 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<style>
 		body {
-    background-color: lightgrey;
-    margin: 0;                
-    padding: 0;
-    display: flex;
-    justify-content: center;  /* center book-library horizontally */
-}
+			background-color: lightgrey;
+			margin: 0;                
+			padding: 0;
+			display: flex;
+			justify-content: center;  
+		}
 
-.book-library {
-	margin-top:20px;
-    width: 500px;
-	height:1430px;
-    background-color: lightgrey;
-    padding: 20px 0;          /* only vertical padding, no left-right */
-    box-sizing: border-box;   /* include padding inside width */
-	box-shadow:2px 2px 2px 6px gray;
-}
+		.book-library {
+			margin-top: 20px;
+			width: 500px;
+			height: 1430px;
+			background-color: lightgrey;
+			padding: 20px 0;          
+			box-sizing: border-box;   
+			box-shadow: 2px 2px 6px gray;
+		}
 
-.book {
-    padding: 20px;
-}
+		h1 {
+			text-align: center;
+			margin: 0;
+			padding: 10px 0;
+		}
 
-.image {
-    width: 100%;
-    text-align: center;
-}
+		.book {
+			padding: 20px;
+		}
 
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    padding: 5px 0;
-}
+		.image {
+			width: 100%;
+			text-align: center;
+		}
 
-.content h4,
-.content p,
-.content button {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
+		.content {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			text-align: left;
+			padding: 5px 0;
+		}
 
-.divider {
-    background-color: white;
-    width: 100%;
-    height: 15px;
-}
-.price {
-  background-color: rgb(46, 204, 113); /* matches test */
-  color: rgb(255, 255, 255);
-  border-radius: 5px;
-  text-align: center;
-  padding: 5px;
-  width: 100%;
-}
-.content p {
-  color: rgb(119, 119, 119); /* matches test */
-}
+		.content h4,
+		.content p,
+		.content .price {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
 
+		.divider {
+			background-color: white;
+			width: 100%;
+			height: 15px;
+		}
+
+		.price {
+			background-color: rgb(46, 204, 113); 
+			color: rgb(255, 255, 255);
+			border-radius: 5px;
+			text-align: center;
+			padding: 5px;
+			width: 100%;
+		}
+
+		.content p {
+			color: rgb(119, 119, 119);
+		}
 	</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
 	<div class="book-library">
-		<h1 style="text-align:center;">Book Library</h1>
+		<h1>Book Library</h1>
+		
 		<div class="divider"></div>
 		<div class="book">
 			<div class="image">
@@ -79,10 +84,11 @@
 			</div>
 			<div class="content">
 				<h4>SPY IN THE AMBER</h4>
-				<p style="color:#777777">By Manohar Malgonkar</p>
-				  <div class="price">Rs. 299</div>
+				<p>By Manohar Malgonkar</p>
+				<div class="price">Rs. 299</div>
 			</div>
 		</div>
+
 		<div class="divider"></div>
 		<div class="book">
 			<div class="image">
@@ -90,10 +96,11 @@
 			</div>
 			<div class="content">
 				<h4>Sacred Games</h4>
-				<p style="color:#777777">By Vikram Chandra</p>
-				  <div class="price">Rs. 299</div>
+				<p>By Vikram Chandra</p>
+				<div class="price">Rs. 199</div>
 			</div>
 		</div>
+
 		<div class="divider"></div>
 		<div class="book">
 			<div class="image">
@@ -101,14 +108,11 @@
 			</div>
 			<div class="content">
 				<h4>BYOMKESH BAKSHI</h4>
-				<p style="color:#777777">By Saradindu Bandopadhyay</p>
-				  <div class="price">Rs. 299</div>
+				<p>By Saradindu Bandopadhyay</p>
+				<div class="price">Rs. 249</div>
 			</div>
 		</div>
 	</div>
-    <script type="text/javascript" src="./script.js">
-</script>
-
+	<script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
